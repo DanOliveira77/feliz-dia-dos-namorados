@@ -182,7 +182,7 @@ body {
 
 .coracao {
   font-size: 2.5rem;
-  color: var(--vermelho);
+  color: var(--branco);
 }
 
 .mensagem-final h2 {
@@ -207,6 +207,10 @@ body {
   padding: 30px;
   font-family: var(--fonte-texto);
   font-size: 1.3rem;
+  color: var(--cinza-escuro);
+}
+
+.rodape .coracao-rodape {
   color: var(--vermelho);
 }
 
