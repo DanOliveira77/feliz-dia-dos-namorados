@@ -223,11 +223,11 @@ body {
     position: relative;
     top: auto !important;
     left: auto !important;
-    width: 140px !important;
+    width: calc((100% - 28px) / 3) !important;
   }
 
   .polaroid img {
-    height: 150px;
+    height: 110px;
   }
 
   .mensagem-final {
