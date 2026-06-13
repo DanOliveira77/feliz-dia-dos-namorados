@@ -1,9 +1,14 @@
 // Permite "ampliar" as polaroids também ao tocar em telas sensíveis ao toque
 document.querySelectorAll(".polaroid").forEach((foto) => {
-  foto.addEventListener("click", () => {
-    document.querySelectorAll(".polaroid.ativa").forEach((outra) => {
-      if (outra !== foto) outra.classList.remove("ativa");
-    });
+  foto.addEventListener("click", (evento) => {
+    evento.stopPropagation();
+
+    const ativa = document.querySelector(".polaroid.ativa");
+    if (ativa && ativa !== foto) {
+      ativa.classList.remove("ativa");
+      return;
+    }
+
     foto.classList.toggle("ativa");
   });
 });
